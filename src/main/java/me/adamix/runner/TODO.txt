@@ -1,0 +1,30 @@
+
+[X] Add board to gameplay scene
+[X] Make board expandable in width
+[X] Make board scrolling down
+[X] Make tile generation in chunks
+
+[50%] Add player textures and movement ( + animations )
+[X] Random tile pattern generation
+[X] Tile appear animation/textures
+[X] Tile bottom appear animation/textures
+[X] Randomized appear animation
+
+[ ] Improve laser textures + add more frames
+[X] Make laser deadly
+[X] Add automatic energy ball appear
+
+[ ] Fix player jitter
+
+[ ] Add red screen indicator when player is close to death
+
+[ ] Gameplay background ( maybe via shaders )
+
+[ ] Add main menu
+[ ] Add death screen
+[ ] Add some statistic display ( time, distance, etc. )
+[ ] Add cooldown for player movement
+
+[ ] Add controls screen (for presentation only)
+
+[MAYBE] Fix random dying. I guess its by energy balls -> after their disappearence they will still kill player when walked on its column
