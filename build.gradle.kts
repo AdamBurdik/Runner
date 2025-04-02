@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "me.adamix.runner"
-version = "1.0"
+version = "0.0.1"
 
 repositories {
     mavenCentral()
@@ -32,9 +32,8 @@ tasks.jar {
 }
 
 tasks.shadowJar {
-    archiveBaseName = "runner"
     archiveClassifier = ""
-    archiveVersion = ""
+    archiveVersion.set(project.version.toString())
 }
 
 tasks.build {
