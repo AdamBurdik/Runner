@@ -15,7 +15,7 @@ import org.jetbrains.annotations.NotNull;
 import java.util.Random;
 
 public class GameplayScene implements JScene {
-	private final Random random = new Random();
+	private final Random random = new Random(52858728);
 	@Getter
 	private static Board board;
 	@Getter

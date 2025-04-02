@@ -1,5 +1,6 @@
 plugins {
     id("java")
+    id("com.gradleup.shadow") version "8.3.0"
 }
 
 group = "me.adamix.runner"
@@ -20,6 +21,24 @@ dependencies {
     annotationProcessor("org.projectlombok:lombok:1.18.36")
     testCompileOnly("org.projectlombok:lombok:1.18.36")
     testAnnotationProcessor("org.projectlombok:lombok:1.18.36")
+}
+
+tasks.jar {
+    manifest {
+        attributes(
+            "Main-Class" to "me.adamix.runner.Runner"
+        )
+    }
+}
+
+tasks.shadowJar {
+    archiveBaseName = "runner"
+    archiveClassifier = ""
+    archiveVersion = ""
+}
+
+tasks.build {
+    dependsOn(tasks.shadowJar)
 }
 
 tasks.test {

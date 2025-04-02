@@ -30,16 +30,12 @@ public class Runner implements JGame {
 
 	@Override
 	public void create() {
-		JFramework.addScene("main", new MainScene());
+//		JFramework.addScene("main", new MainScene());
 		JFramework.addScene("gameplay", new GameplayScene());
 
 		// Load assets
 		TextureManager.addTexture(10000, "assets/bg/background_1.png");
 		TextureManager.addTexture(10001, "assets/bg/background_2.png");
-//		TextureManager.addTexture(10001, "assets/bg/cube.png");
-//		TextureManager.addTexture(10002, "assets/bg/cylinder.png");
-//		TextureManager.addTexture(10003, "assets/bg/secret.png");
-//		TextureManager.addTexture(10004, "assets/bg/logo.png ");
 
 		background = new Background();
 	}

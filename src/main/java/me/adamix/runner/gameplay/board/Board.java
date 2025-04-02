@@ -115,9 +115,9 @@ public class Board {
 					generateEnergyBall();
 				}
 			}
-			for (int i = 0; i < random.nextInt(1, 2 + difficulty * 2); i++) {
-				generateEnergyCircle();
-			}
+//			for (int i = 0; i < random.nextInt(1, 2 + difficulty * 2); i++) {
+//				generateEnergyCircle();
+//			}
 			processingChunk = chunkQueue.removeFirst();
 			if (chunkQueue.isEmpty()) {
 				generateQueue();
@@ -136,7 +136,7 @@ public class Board {
 		}
 
 		rowMap.put(currentRowIndex, row);
-		removeRandomRowTiles(row);
+//		removeRandomRowTiles(row);
 	}
 
 	public void update(@NotNull UpdateContext ctx) {
@@ -247,6 +247,7 @@ public class Board {
 	}
 
 	public void removeRandomRowTiles(Map<Integer, Tile> row) {
+		// ToDo Fix this method
 		List<Integer> already = new ArrayList<>();
 		for (int i = 0; i < random.nextInt(0, Math.max((int) (2 + difficulty * 1.2f), row.size() - 2)); i++) {
 			int randomX = random.nextInt(-(row.size() - 1) / 2, row.size() / 2);
