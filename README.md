@@ -1,6 +1,8 @@
 # Runner
 This is simple prototype. Most of it will be rewritten in the future.
 
+Tested on java 21.
+
 ## How To Build
 1. Clone the repository
 ```bash
