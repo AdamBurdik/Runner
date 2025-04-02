@@ -15,7 +15,7 @@ dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter")
     implementation("org.jetbrains:annotations:26.0.2")
 
-    implementation(project(":jframework"))
+    implementation(files("libs/JFramework-1.0.jar"))
 
     compileOnly("org.projectlombok:lombok:1.18.36")
     annotationProcessor("org.projectlombok:lombok:1.18.36")
