@@ -14,9 +14,11 @@ dependencies {
     testImplementation(platform("org.junit:junit-bom:5.10.0"))
     testImplementation("org.junit.jupiter:junit-jupiter")
     implementation("org.jetbrains:annotations:26.0.2")
+    implementation("ch.qos.logback:logback-classic:1.5.16")
 
-    implementation(files("libs/JFramework-1.0.jar"))
+    implementation(files("libs/JFramework-1.1.jar"))
 
+    implementation("uk.co.electronstudio.jaylib:jaylib:5.5.+")
     compileOnly("org.projectlombok:lombok:1.18.36")
     annotationProcessor("org.projectlombok:lombok:1.18.36")
     testCompileOnly("org.projectlombok:lombok:1.18.36")

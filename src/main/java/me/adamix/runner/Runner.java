@@ -24,6 +24,7 @@ public class Runner implements JGame {
 	@Override
 	public void init() {
 		JFramework.setTitle("Runner");
+		JFramework.setTraceLogLevel(4);
 		JFramework.setConfigFlags(Flags.FLAG_WINDOW_RESIZABLE);
 		JFramework.setTargetFps(120);
 	}
